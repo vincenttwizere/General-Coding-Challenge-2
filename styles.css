@@ -41,3 +41,44 @@ body{
 .logo span {
     font-size: 24px; 
 }
+/* styles for dashboard */
+.Dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 0 16px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgb(255,255,255);
+} 
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    border-bottom: 1px solid #ccc;
+}
+
+.user-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info {
+    display: block;
+    flex-direction: column;
+}
+/* Styles for the icons */
+.user-info i {
+    font-size: 14px;
+    padding-left: 20px;
+    margin-right: 14px; 
+    color: rgb(16,28,24); 
+    /* padding-bottom: 100px; */
+}
+
+i:hover {
+    background-color: #007bff; 
+}
