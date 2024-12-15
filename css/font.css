@@ -1,0 +1,40 @@
+/* importing the fonts from google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* apply the font */
+body{
+    font-family: "Raleway";
+}
+/* headaer */
+#title span,h5{
+    font-size: 18px;
+}
+#user-id h2 span{
+    font-weight: 600;
+}
+#user-id h2 span{
+    font-size: 17px;
+}
+#nav-bar,#nav-bar i,#nav-links a ,table,tr,#user-id h2{
+    font-size:15px;
+}
+.card .numbers i{
+    font-size:48px;
+}
+.card h4, li span,footer h4{
+    font-size: 20px;
+}
+.card h3{
+    font-size: 24px;
+}
+.card h3 , h5,.text h4 span,footer h4,#user-id h2{
+    font-weight: normal;
+}
+.card h4, .text h4{
+    font-weight: 500;
+}
+.percent,li span{
+    font-weight: 400;
+}
+button,.text h4 span{
+    font-size: 16px;
+}

@@ -1,0 +1,125 @@
+:root{
+    --body-background:#f9f8f8;
+    --color-red:#f44336;
+    --color-blue:#2196f3;
+    --color-darkgreen:#009688;
+    --color-orange:#ff9800;
+    --color-white:#fff;
+    --color-black:#000;
+    --color-lightyellow:#d2be0e;
+    --color-lightgreen:#4caf50;
+
+}
+body{
+    background: var(--body-background);
+}
+#title{
+    background: var(--color-black);
+}
+#title span{
+    color:var(--color-white);
+}
+#title div{
+    color:white;
+}
+#nav-bar{
+    background: var(--color-white);
+}
+/* nav-links */
+#nav-links a{
+    background-color:#fffefe;
+    color:var(--color-black);
+}
+#nav-links .f-child{
+    background: var(--color-blue);
+    color:var(--color-white);
+}
+#nav-links .f-child:hover ,#nav-links a:hover{
+    background: #ccc;
+    color:var(--color-black);
+}
+.card{
+    color:var(--color-white)
+}
+.card-blue{
+    background: var(--color-blue);
+}
+.card-red{
+    background: var(--color-red);
+}
+.card-green{
+    background: var(--color-darkgreen);
+}
+.card-orange{
+    background: var(--color-orange);
+}
+/* giving background the table rows  */
+tr:nth-of-type(odd){
+    background:var(--color-white);
+}
+tr:nth-of-type(even){
+    background: transparent;
+}
+/* giving background to the div hold the rate */
+#stats-numbers .rate{
+    background:#949494;
+}
+.percent{
+    color:var(--color-white);
+}
+.percent.top{
+    background: var(--color-lightgreen);
+}
+.percent.middle{
+    background: var(--color-orange);
+    color:var(--color-black);
+}
+.percent.last{
+    background: var(--color-red);
+}
+button{
+    background: #6a6a6a;
+    color:var(--color-white);
+}
+button:hover{
+    background:#c7c7c7;
+    color:var(--color-black);
+}
+.text h4 span{
+    color:#817c7c;
+}
+#menu{
+    background: #616161;
+    color:var(--color-white)
+}
+.demograph h5{
+    border-bottom:6px solid var(--color-lightgreen)
+}
+.system h5{
+    border-bottom:6px solid var(--color-red)
+}
+.target h5{
+    border-bottom:6px solid var(--color-orange)
+}
+footer a{
+    color:var(--color-black);
+}
+#recent-user li{
+    border-bottom:1px solid #c7c7c7;
+}
+#recent-user div{
+    background: var(--color-white);
+}
+#countries .country-data{
+    border:1px solid #c2c2c2;
+}
+#countries .country-data tr{
+    border-bottom: 1px solid #ccc;
+}
+#countries .country-data tr:hover{
+    background:#c7c7c7;
+}
+#recent-user div{
+    box-shadow: 5px 5px 10px #7575754d,-5px -5px 10px #7575754d;
+}
+
