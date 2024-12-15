@@ -1,80 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coding challenge 2</title>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-
-<div class="logo">
-    <span>Logo</span>
-</div>
-  <!-- Dashboard section-->
-  <section class="Dashboard">
-    <div class="user-profile">
-        <div>
-            <img src="./Assets/undraw_Male_avatar_g98d.png" alt="User profile picture">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analytics</title>
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/color.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <!-- fontawesome icons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <header id="title">
+        <div id="title-content">
+            <div class="header-menu">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                <span>Menu</span>
+            </div>
+            <span>Logo</span>
         </div>
-        <div class="user-info">
-            <div>
-                <span>Welcome, <strong>Mike</strong></span>
+    </header>
+    <div id="divider">
+        <nav id="nav-bar">
+          <div id="user">
+            <div class="img-container">
+                <img src="./assets/avatar2.png" alt="avatar2" />
             </div>
-            <div>
-                <i class="fas fa-envelope"></i>  
-                <i class="fas fa-user"></i>  
-                <i class="fa fa-cog" ></i>  
-            </div>
-        </div>
-        
-    </div>
-   
-    <div class="dashboard-content">
-        <h1>Dashboard</h1>
-        <div class="cards">
-            <div class="card">
-                <i class="fa fa-users" aria-hidden="true"></i>
-                <span>overview</span>
-            </div>
-            <div class="card">
-                <i class="fa fa-eye" aria-hidden="true"></i>
-                <span>View</span>
-            </div>
-            <div class="card">
-                <i class="fa fa-users" aria-hidden="true"></i>
-                <span>traffic</span>
-            </div>
-            <div class="card">
-                <i class="fa fa-users" aria-hidden="true"></i>
-                <span>Geo</span>
-            </div>
-            <div class="card">
-                <i class="fas fa-gem"></i>
-
-                <span>Orders</span>
-            </div>
-            <div class="card">
-                <i class="fa fa-bell" aria-hidden="true"></i>
-                <span>News</span>
-            </div>
-            <div class="card">
-                <i class="fa fa-home" aria-hidden="true"></i>
-                <span>General</span>
-            </div>
-            <div class="card">
-                <i class="fa fa-history" aria-hidden="true"></i>
-                <span>History</span>
-            </div>
-            <div class="card">
+            <div id="user-id">
+              <h2>Welcome, <span>Mike</span></h2>
+              <div id="user-icons">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <i class="fa fa-user" aria-hidden="true"></i>
                 <i class="fa fa-cog" aria-hidden="true"></i>
-                <span>Settings</span>
+              </div>
             </div>
+          </div>
+          <hr>
+          <div id="nav-links">
+            <div>
+                <h5>dashboard</h5>
+            </div>
+            <a href="#" class="f-child"><i class="fa fa-users" aria-hidden="true"></i>overview</a>
+            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i>views</a>
+            <a href="#"><i class="fa fa-users" aria-hidden="true"></i>traffic</a>
+            <a href="#"><i class="fa fa-bullseye" aria-hidden="true"></i>geo</a>
+            <a href="#"><i class="fa fa-diamond" aria-hidden="true"></i>orders</a>
+            <a href="#"><i class="fa fa-bell" aria-hidden="true"></i>news</a>
+            <a href="#"><i class="fa fa-university" aria-hidden="true"></i>general</a>
+            <a href="#"><i class="fa fa-history" aria-hidden="true"></i>history</a>
+            <a href="#"><i class="fa fa-cog" aria-hidden="true"></i>settings</a>
+          </div>
+        </nav>
+        <div id="main-footer-content">
+            <main>
+                <!-- dashboard -->
+                <section id="dashboard">
+                    <header>
+                        <h5>
+                            <b><i class="fa fa-tachometer" aria-hidden="true"></i>my dashboard</b>
+                        </h5>
+                    </header>
+                    <div id="dashboard-cards">
+                        <div class="card card-red">
+                            <div class="numbers">
+                                <i class="fa fa-comment" aria-hidden="true"></i>
+                                <h3>52</h4>
+                            </div>
+                            <h4>message</h4>
+                        </div>
+                        <div class="card card-blue">
+                            <div class="numbers">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <h3>99</h4>
+                            </div>
+                            <h4>views</h4>
+                        </div>
+                        <div class="card card-green">
+                            <div class="numbers">
+                                <i class="fa fa-share-alt" aria-hidden="true"></i>
+                                <h3>23</h4>
+                            </div>
+                            <h4>shares</h4>
+                        </div>
+                        <div class="card card-orange">
+                            <div class="numbers">
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                <h3>50</h4>
+                            </div>
+                            <h4>users</h4>
+                        </div>
+        
+                    </div>
+                </section>
+                <!-- feeds  -->
+                <section id="news">
+                    <div id="region">
+                        <h5>regions</h5>
+                        <div>
+                            <img src="./assets/region.jpg" alt="regions">
+                        </div>
+                    </div>
+                    <div id="feeds">
+                        <h5>feeds</h5>
+                        <table>
+                            <!-- feed data -->
+                            <tr>
+                                <td class="col-1"><i class="fa fa-user" aria-hidden="true" style="color:#2196f3;"></i></td>
+                                <td class="col-2">New record, over 90 views.</td>
+                                <td class="col-3"><i>10 mins</i></td>
+                            </tr>
+                            <!-- more feed data -->
+                            <tr>
+                                <td class="col-1"><i class="fa fa-bell" aria-hidden="true" style="color: #f44336;"></i></td>
+                                <td class="col-2">Database error.</td>
+                                <td class="col-3"><i>15 mins</i></td>
+                            </tr>
+                            <tr>
+                                <td class="col-1"><i class="fa fa-users" aria-hidden="true" style="color: #d2be0e;"></i></td>
+                                <td class="col-2">New record, over 40 users.</td>
+                                <td class="col-3"><i>17 mins</i></td>
+                            </tr>
+                            <tr>
+                                <td class="col-1"><i class="fa fa-comment" aria-hidden="true" style="color:#f44336"></i></td>
+                                <td class="col-2">New comments.</td>
+                                <td class="col-3"><i>25 mins</i></td>
+                            </tr>
+                            <tr>
+                                <td class="col-1"><i class="fa fa-bookmark" aria-hidden="true" style="color: #2196f3;"></i></td>
+                                <td class="col-2">Check transactions.</td>
+                                <td class="col-3"><i>28 mins</i></td>
+                            </tr>
+                            <tr>
+                                <td class="col-1"><i class="fa fa-laptop" aria-hidden="true" style="color:#f44336;"></i></td>
+                                <td class="col-2">CPU overload.</td>
+                                <td class="col-3"><i>35 mins</i></td>
+                            </tr>
+                            <tr>
+                                <td class="col-1"><i class="fa fa-share-alt" aria-hidden="true" style="color: #4caf50;"></i></td>
+                                <td class="col-2">New shares.</td>
+                                <td class="col-3"><i>39 mins</i></td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+                <!-- statitics with their rates -->
+                <section id="statistics">
+                    <h5>general stats</h5>
+                    <!-- rates -->
+                    <div id="stats-numbers">
+                        <p>New Visitors</p>
+                        <div class="rate">
+                            <div class="percent top">+25%</div>
+                        </div>
+                        <p>New Users</p>
+                        <div class="rate">
+                            <div class="percent middle">50%</div>
+                        </div>
+                        <p>Bounce Rate</p>
+                        <div class="rate">
+                            <div class="percent last">75%</div>
+                        </div>
+                    </div>
+                </section>
+                <!-- countries and its counts -->
+                <section id="countries">
+                    <h5>countries</h5>
+                    <table class="country-data">
+                        <!-- country data -->
+                        <tr>
+                            <td>United States</td>
+                            <td>65%</td>
+                        </tr>
+                        <!-- more country data -->
+                        <tr>
+                            <td>UK</td>
+                            <td>15.7%</td>
+                        </tr>
+                        <tr>
+                            <td>Russia</td>
+                            <td>5.6%</td>
+                        </tr>
+                        <tr>
+                            <td>spain</td>
+                            <td>2.1%</td>
+                        </tr>
+                        <tr>
+                            <td>India</td>
+                            <td>1.9%</td>
+                        </tr>
+                        <tr>
+                            <td>France</td>
+                            <td>1.5%</td>
+                        </tr>
+                    </table>
+                    <!-- button for loading more countries -->
+                    <button>more countries<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </section>
+                <!-- recent users -->
+                <section id="recent-user">
+                    <h5>recent users</h5>
+                    <div>
+                        <ol>
+                            <li>
+                                
+                                <img src="./assets/avatar2.png" alt="avatar2" width="35" height="35">
+                                <span>mike</span>
+                            </li>
+                            <li>
+                                <img src="./assets/avatar6.png" alt="avatar6" width="35" height="35">
+                                <span>jill</span>
+                            </li>
+                            <li>
+                                <img src="./assets/avatar5.png" alt="avatar5" width="35" height="35">
+                                <span>jane</span>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <!-- recent comments -->
+                <section id="recent-comments">
+                    <h5>recent comments</h5>
+                    <div id="comments">
+                        <div class="user">
+                            <div class="img-container">
+                                <img src="./assets/avatar3.png" alt="avatar3" width="100" height="240">
+                            </div>
+                            <div class="text">
+                                <h4>John <span>Sep 29, 2014, 9:12 PM</span></h4>
+                                <p>
+                                    Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <div class="img-container">
+                                <img src="./assets/avatar1.png" alt="avatar1" width="100" height="240">
+                            </div>
+                            <div class="text">
+                                <h4>Bo <span>Sep 28, 2014, 10:15 PM</span></h4>
+                                <p>
+                                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- menu -->
+                <section id="menu">
+                    <div class="container">
+                        <div class="demograph">
+                            <h5>demographic</h5>
+                            <p>language</p>
+                            <p>country</p>
+                            <p>city</p>
+                        </div>
+                        <div class="system">
+                            <h5>system</h5>
+                            <p>browser</p>
+                            <p>OS</p>
+                            <p>more</p>
+                        </div>
+                        <div class="target">
+                            <h5>target</h5>
+                            <p>users</p>
+                            <p>active</p>
+                            <p>GEO</p>
+                            <p>interests</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <h4>FOOTER</h4>
+                <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+            </footer>
+        </div>
     </div>
-
-  </section>
-
-</body>
+  </body>
 </html>
